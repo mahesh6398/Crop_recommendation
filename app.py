@@ -156,6 +156,7 @@ def crop_prediction():
 
 
 
+
 @ app.route('/fertilizer-predict', methods=['POST'])
 def fert_recommend():
     title = 'Fertilizer Suggestion'
