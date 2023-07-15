@@ -1,0 +1,36 @@
+{% extends 'layout.html' %} {% block body %}
+
+<style>
+  .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .icon {
+            height: 50px;
+            width: 50px;
+        }
+</style>
+
+
+<h1>5-Day Weather Forecast</h1>
+<div class="container">
+    {% for data in weather_data %}
+        <div class="card">
+            <h2>{{ data.date }}</h2>
+            <img src="http://openweathermap.org/img/wn/{{ data.icon }}.png" alt="Weather Icon" class="icon">
+            <p>Temperature: {{ data.temperature }}°C</p>
+            <p>{{ data.weather }}</p>
+        </div>
+        {% endfor %}
+      </div>
+{% endblock %}
