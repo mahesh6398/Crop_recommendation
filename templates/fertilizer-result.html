@@ -1,5 +1,13 @@
 {% extends 'layout.html' %} {% block body %}
+<style>
+  #foot {
+     position: fixed;
+     width: 100%;
+     bottom: 0;
+    }
+</style>
 
+<div>
 <div class="container py-2 mx-auto my-30 h-10 " style="margin: 4rem;">
   <div class="row">
     <div class="col-sm py-2 py-md-3">
@@ -7,6 +15,16 @@
              <p class="text-center" style="color: black; font-size: 20px;"> The system recommends you to use <span style="color: rgb(236, 9, 28);font-size: 28px;">{{ prediction }}</span> Fertilizer</p>
         </div>
     </div>
+</div>
+<div class="container py-2 mx-auto my-50 h-10 " style="margin: 4px;">
+  <div class="row">
+      <div class="col-sm py-2 py-md-3">
+          <div class="card card-body" style="justify-content: center; background-color:blanchedalmond">
+               <p class="text-center" style="color: black; font-size: 20px;">{{ recommendation }}</p>
+          </div>
+      </div>
+  </div>
+</div>
 </div>
 
 

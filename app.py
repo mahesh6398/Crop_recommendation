@@ -19,6 +19,8 @@ fertilizer_recommendation_model = pickle.load(
     open(fertilizer_recommendation_model_path, 'rb'))
 
 
+
+
 def weather_fetch(city_name):
     api_key = config.weather_api_key
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
@@ -38,25 +40,6 @@ def weather_fetch(city_name):
 
 
 
-
-
-
-# def weather_fetching(city_name):
-#     api_key = config.api_key
-#     url = f'http://api.openweathermap.org/data/2.5/forecast?q={city_name}&appid={api_key}&units=metric'
-#     response = requests.get(url)
-#     data = response.json()
-
-    
-#     weather_data = []
-#     for forecast in data['list'][:5]:
-#         date = forecast['dt_txt']
-#         temperature = forecast['main']['temp']
-#         weather = forecast['weather'][0]['description']
-#         icon = forecast['weather'][0]['icon']
-#         weather_data.append({'date': date, 'temperature': temperature, 'weather': weather, 'icon': icon})
-
-#     return weather_data
 
 
 app = Flask(__name__)
@@ -82,7 +65,11 @@ def fertilizer_recommendation():
     title = 'Fertilizer Suggestion'
     return render_template('fertilizer.html', title=title)
 
-
+# About
+@ app.route('/about')
+def about():
+    title = 'About'
+    return render_template('about.html', title=title)
 
 
 
@@ -155,7 +142,7 @@ def crop_prediction():
             return render_template('try_again.html', title=title)
 
 
-
+    
 
 @ app.route('/fertilizer-predict', methods=['POST'])
 def fert_recommend():

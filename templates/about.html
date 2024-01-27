@@ -1,0 +1,79 @@
+{% extends 'layout.html' %} {% block body %}
+
+<style>
+    #foot {
+     position: fixed;
+     width: 100%;
+     bottom: 0;
+     height: 160px;
+    }
+    .heading{
+       
+        width: 50%;
+        margin-left: 15%;
+        margin-top: 30px;
+    }
+    .name{
+        letter-spacing: 5px;
+        font-size: 80px;
+         font-weight: 900;
+    }
+    .subhead{
+        font-weight: 600;
+        font-size: 50px;
+    }
+    h3{
+        font-weight: 300;
+    }
+    .main_content{
+        display: flex;
+
+    }
+    .my_image{
+        margin-top: 30px;
+    }
+    .about_foot{
+  background: #191818;
+  min-height: 60px;
+  position: fixed;
+  bottom: 160px;
+  width: 100%;
+  padding-top: 15px;
+}
+.about_foot .icons{
+  text-align: center;
+  padding-top: 10px ;
+}
+.about_foot .icons img{
+  height: 30px;
+  padding-left:20px;
+}
+
+  </style>
+  <div class="main_content">
+         <div class="heading">
+            <h3>I am</h3>
+            <h1 class="name" >MAHESH M</h1>
+            <h2 class="subhead">I create things for the web.</h2>
+            <h3 class="content">I'm a Frontend Developer based in Bangalore,<br> India specializing in building exceptional,<br> high-quality websites and web-apps.</h3>
+         </div>
+         <div class="my_image">
+            <img  src="../static/images/myphoto.jpeg" alt="my image">
+         </div>
+        </div>
+        <div class="about_foot">
+            <div class="icons">
+                <a href="https://github.com/mahesh6398/">
+                  <img src="../static/images/github.svg"
+                /></a>
+                <a href="https://www.linkedin.com/in/maheshm6398/">
+                  <img src="../static/images/linkedin.svg"
+                /></a>
+                <a href="mailto:maheshchetan639811@gmail.com"> <img src="../static/images/gmail.svg" /></a>
+                <a href="https://www.instagram.com/mahesh_m_6398/">
+                  <img src="../static/images/instagram.svg"
+                /></a>
+              </div>
+        </div>
+        
+{% endblock %}

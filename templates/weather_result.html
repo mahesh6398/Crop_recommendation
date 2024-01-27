@@ -1,7 +1,7 @@
 {% extends 'layout.html' %} {% block body %}
 
 <style>
-  .container {
+  .weather_container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -13,17 +13,29 @@
             border-radius: 5px;
             padding: 10px;
             margin: 10px;
+            background-color: #b3ced4;
+            box-shadow: 2px 2px 2px 2px #a5a0a0,
         }
 
         .icon {
             height: 50px;
             width: 50px;
+            
         }
+        #foot {
+     position: fixed;
+     width: 100%;
+     bottom: 0;
+    }
+    .weather{
+        margin-top: 50px;
+    }
+   
 </style>
 
-
-<h1>5-Day Weather Forecast</h1>
-<div class="container">
+<div class="weather" >
+<h1 class="text-center">5-Day Weather Forecast</h1>
+<div class="weather_container" style="margin-top: 10px;">
     {% for data in weather_data %}
         <div class="card">
             <h2>{{ data.date }}</h2>
@@ -33,4 +45,5 @@
         </div>
         {% endfor %}
       </div>
+    </div>
 {% endblock %}
