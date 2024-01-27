@@ -61,27 +61,13 @@ nltk==3.6.5
 
 pandas==1.3.4
 
-pathspec==0.7.0
-patsy==0.5.2
-pep8==1.7.1
 
 Pillow==8.4.0
-pkginfo==1.7.1
-
-ply==3.11
-
-pycosat==0.6.3
-
-pycurl==7.44.1
-
-pyls-spyder==0.4.0
-pyodbc===4.0.0-unsupported
 
 
 
-pytz==2021.3
 
-PyYAML==6.0
+
 
 scikit-image==0.18.3
 
