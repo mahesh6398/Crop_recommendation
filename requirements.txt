@@ -1,5 +1,4 @@
 
-python
 
 appdirs==1.4.4
 argh==0.26.2
