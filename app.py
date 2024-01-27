@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, Markup
+from flask import Flask, render_template, request
+from werkzeug import Markup
 import numpy as np
 import pandas as pd
 from utils.fertilizer import fertilizer_dic
