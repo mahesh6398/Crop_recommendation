@@ -51,9 +51,6 @@ MarkupSafe==2.1.4
 mccabe==0.6.1
 
 
-
-mkl-service==2.4.0
-
 mpmath==1.2.1
 
 munkres==1.1.4
@@ -80,10 +77,7 @@ pycurl==7.44.1
 pyls-spyder==0.4.0
 pyodbc===4.0.0-unsupported
 
-pytest==6.2.4
 
-python-lsp-jsonrpc==1.0.0
-python-lsp-server==1.2.4
 
 pytz==2021.3
 
