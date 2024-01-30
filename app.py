@@ -6,7 +6,7 @@ from utils.fertilizer import fertilizer_dic
 import requests
 import config
 import pickle
-from PIL import Image
+# from PIL import Image
 
 
 # Loading model
