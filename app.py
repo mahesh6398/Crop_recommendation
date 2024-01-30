@@ -5,18 +5,18 @@ import pandas as pd
 from utils.fertilizer import fertilizer_dic
 import requests
 import config
-import joblib
+import pickle
 # from PIL import Image
 
 
 # Loading model
 
 crop_recommendation_model_path = 'models/RandomForest.pkl'
-crop_recommendation_model = joblib.load(
+crop_recommendation_model = pickle.load(
     open(crop_recommendation_model_path, 'rb'))
 
 fertilizer_recommendation_model_path = 'models/Fertilizer_Recommendation.pkl'
-fertilizer_recommendation_model = joblib.load(
+fertilizer_recommendation_model = pickle.load(
     open(fertilizer_recommendation_model_path, 'rb'))
 
 
