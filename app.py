@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from werkzeug import Markup
+from markupsafe import Markup 
 import numpy as np
 import pandas as pd
 from utils.fertilizer import fertilizer_dic
@@ -195,3 +195,7 @@ def fert_recommend():
 
     
 
+   
+
+if __name__ == '__main__':
+    app.run(debug=False)
